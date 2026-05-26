@@ -9,18 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --ink:#1a1612;--paper:#faf7f2;--cream:#f0ead9;--tan:#e2d5bc;
-  --green:#2e5c30;--green-light:#5a9e5c;--warm-gray:#7a7168;--r:6px;
-}
+:root{--ink:#1a1612;--paper:#faf7f2;--cream:#f0ead9;--tan:#e2d5bc;--green:#2e5c30;--green-light:#5a9e5c;--warm-gray:#7a7168;--r:6px;}
 body{font-family:'Lato',sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;}
-
-nav{
-  background:var(--ink);
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 5vw;height:72px;
-  border-bottom:2px solid var(--green);
-}
+nav{background:var(--ink);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:72px;border-bottom:2px solid var(--green);}
 .logo{display:flex;align-items:center;gap:14px;text-decoration:none;}
 .logo-icon{width:44px;height:44px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;flex-shrink:0;}
 .logo-text{font-family:'Playfair Display',serif;line-height:1.1;}
@@ -28,67 +19,33 @@ nav{
 .logo-text .main{font-size:1.05rem;color:#faf7f2;font-weight:700}
 .nav-back{color:rgba(250,247,242,0.7);text-decoration:none;font-size:0.88rem;display:flex;align-items:center;gap:6px;transition:color 0.2s;}
 .nav-back:hover{color:var(--green-light)}
-
-.hero{
-  background:var(--green);
-  padding:60px 5vw 48px;
-}
+.hero{background:var(--green);padding:60px 5vw 48px;}
 .hero-label{font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:12px;display:block;}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);color:white;font-weight:900;margin-bottom:8px;}
 .hero p{color:rgba(255,255,255,0.7);font-size:0.95rem;}
-
 .content{max-width:760px;margin:0 auto;padding:60px 5vw;}
-
 .section{margin-bottom:44px;}
-.section h2{
-  font-family:'Playfair Display',serif;
-  font-size:1.4rem;color:var(--ink);font-weight:700;
-  margin-bottom:14px;
-  padding-bottom:10px;
-  border-bottom:2px solid var(--tan);
-}
+.section h2{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--ink);font-weight:700;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--tan);}
 .section p{font-size:0.97rem;color:#444;line-height:1.8;margin-bottom:12px;font-weight:300;}
 .section ul{padding-left:20px;margin-bottom:12px;}
 .section li{font-size:0.97rem;color:#444;line-height:1.8;margin-bottom:6px;font-weight:300;}
-
-.sms-box{
-  background:var(--cream);
-  border:2px solid var(--tan);
-  border-left:4px solid var(--green);
-  border-radius:var(--r);
-  padding:24px 28px;
-  margin:20px 0;
-}
-.sms-box h3{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:10px;}
-.sms-box p{font-size:0.93rem;color:#444;line-height:1.75;margin-bottom:8px;}
-.sms-box p:last-child{margin-bottom:0;}
-
-.contact-box{
-  background:var(--ink);
-  border-radius:var(--r);
-  padding:28px 32px;
-  margin-top:44px;
-}
+.highlight-box{background:var(--cream);border:2px solid var(--tan);border-left:4px solid var(--green);border-radius:var(--r);padding:24px 28px;margin:20px 0;}
+.highlight-box h3{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:10px;}
+.highlight-box p{font-size:0.93rem;color:#444;line-height:1.75;margin-bottom:8px;}
+.highlight-box p:last-child{margin-bottom:0;}
+.contact-box{background:var(--ink);border-radius:var(--r);padding:28px 32px;margin-top:44px;}
 .contact-box h2{font-family:'Playfair Display',serif;font-size:1.3rem;color:#faf7f2;margin-bottom:16px;}
 .contact-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}
 .contact-item span:first-child{font-size:1rem;flex-shrink:0;margin-top:2px;}
 .contact-item a{color:var(--green-light);text-decoration:none;font-size:0.93rem;}
-.contact-item a:hover{text-decoration:underline;}
 .contact-item p{color:rgba(250,247,242,0.7);font-size:0.93rem;}
-
-footer{
-  background:#110f0c;
-  padding:28px 5vw;
-  text-align:center;
-  border-top:2px solid #2a2520;
-}
+footer{background:#110f0c;padding:28px 5vw;text-align:center;border-top:2px solid #2a2520;}
 footer p{font-size:0.78rem;color:rgba(250,247,242,0.3);}
 footer a{color:rgba(250,247,242,0.4);text-decoration:none;}
 footer a:hover{color:var(--green-light);}
 </style>
 </head>
 <body>
-
 <nav>
   <a href="/" class="logo">
     <div class="logo-icon">🏡</div>
@@ -99,19 +56,17 @@ footer a:hover{color:var(--green-light);}
   </a>
   <a href="/" class="nav-back">← Back to Home</a>
 </nav>
-
 <div class="hero">
   <span class="hero-label">Legal</span>
   <h1>Privacy Policy</h1>
   <p>Last updated: May 25, 2026</p>
 </div>
-
 <div class="content">
 
   <div class="section">
     <h2>Overview</h2>
     <p>The Family Pest Control ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you contact us through our website, phone, or text message.</p>
-    <p>By using our website or contacting us, you agree to the terms of this Privacy Policy.</p>
+    <p>By using our website or contacting us, you agree to the terms of this Privacy Policy and our <a href="/terms.html">Terms of Service</a>.</p>
   </div>
 
   <div class="section">
@@ -125,7 +80,7 @@ footer a:hover{color:var(--green-light);}
       <li>Description of your pest issue</li>
       <li>Appointment preferences</li>
     </ul>
-    <p>We collect this information when you submit our website contact form, call our business phone number, or send us a text message.</p>
+    <p>We collect this information when you submit our website contact form at thefamilypestcontrol.com, call our business phone number, or send us a text message.</p>
   </div>
 
   <div class="section">
@@ -134,23 +89,47 @@ footer a:hover{color:var(--green-light);}
     <ul>
       <li>Responding to your pest control inquiries</li>
       <li>Scheduling and confirming service appointments</li>
-      <li>Sending appointment reminders and service updates</li>
+      <li>Sending appointment reminders and service updates via SMS</li>
       <li>Following up after service completion</li>
       <li>Requesting reviews after service (optional)</li>
     </ul>
-    <p>We do not use your information for unrelated marketing or advertising purposes.</p>
+    <p>We do not use your information for unrelated marketing, advertising, or promotional purposes.</p>
   </div>
 
   <div class="section">
-    <h2>SMS Messaging Policy</h2>
-    <div class="sms-box">
-      <h3>📱 SMS Consent & Opt-Out</h3>
-      <p>By providing your phone number through our website form or by calling us, you consent to receive SMS text messages from The Family Pest Control related to your service requests.</p>
-      <p>Messages may include: appointment confirmations, service reminders, missed call follow-ups, and post-service communications.</p>
-      <p><strong>Message frequency varies</strong> based on your service activity. Message and data rates may apply.</p>
-      <p><strong>To opt out:</strong> Reply STOP to any message at any time. You will receive one confirmation message and no further messages will be sent.</p>
-      <p><strong>For help:</strong> Reply HELP or contact us at myfamilypestcontrol@gmail.com</p>
+    <h2>SMS Messaging &amp; Opt-In Details</h2>
+    <div class="highlight-box">
+      <h3>📱 SMS Program Details</h3>
+      <p><strong>Program description:</strong> The Family Pest Control uses SMS messaging to send appointment confirmations, service reminders, missed call follow-ups, and post-service communications to customers who have opted in.</p>
+      <p><strong>How to opt in:</strong> By providing your phone number and checking the SMS consent checkbox on our website contact form at thefamilypestcontrol.com, or by calling our business number, you consent to receive SMS messages from us.</p>
+      <p><strong>Message frequency:</strong> Message frequency varies based on your service activity. You may receive up to 5 messages per service interaction.</p>
+      <p><strong>Message and data rates:</strong> Standard message and data rates may apply depending on your mobile carrier and plan.</p>
+      <p><strong>To opt out:</strong> Reply STOP to any message at any time. You will receive one confirmation message and no further messages will be sent. You can also contact us directly to be removed.</p>
+      <p><strong>For help:</strong> Reply HELP to any message or contact us at myfamilypestcontrol@gmail.com or (816) 429-0380.</p>
     </div>
+  </div>
+
+  <div class="section">
+    <h2>No Sharing of SMS Opt-In Information</h2>
+    <p><strong>We do not sell, rent, trade, or share your phone number or SMS opt-in information with any third parties for their marketing purposes.</strong> Your consent to receive SMS messages from The Family Pest Control applies only to messages from The Family Pest Control and will never be transferred or sold to any other company or individual.</p>
+  </div>
+
+  <div class="section">
+    <h2>Cookies &amp; Tracking</h2>
+    <p>Our website uses basic analytics tools including Google Analytics to understand how visitors use our site. This may include cookies that collect anonymous data such as pages visited, time on site, and general geographic location.</p>
+    <p>We do not use tracking cookies for advertising or remarketing purposes. You can disable cookies in your browser settings at any time without affecting your ability to use our services.</p>
+    <p>We do not sell data collected through cookies to third parties.</p>
+  </div>
+
+  <div class="section">
+    <h2>Data Security Practices</h2>
+    <p>We take reasonable technical and organizational measures to protect your personal information from unauthorized access, use, disclosure, or destruction. These measures include:</p>
+    <ul>
+      <li>Secure, encrypted data transmission (HTTPS) on our website</li>
+      <li>Limited access to personal information to only those who need it to provide services</li>
+      <li>Use of reputable third-party service providers with their own security standards</li>
+    </ul>
+    <p>While we strive to protect your information, no method of electronic storage or transmission is 100% secure. We cannot guarantee absolute security.</p>
   </div>
 
   <div class="section">
@@ -158,32 +137,34 @@ footer a:hover{color:var(--green-light);}
     <p>We do not sell, trade, or share your personal information with third parties for marketing purposes.</p>
     <p>We may share your information only in the following limited circumstances:</p>
     <ul>
-      <li>With service providers who assist us in operating our business (such as scheduling software), who are bound by confidentiality agreements</li>
-      <li>When required by law or to protect our legal rights</li>
-      <li>With your explicit consent</li>
+      <li>With service providers who assist us in operating our business (such as scheduling and CRM software), who are bound by confidentiality obligations</li>
+      <li>When required by law, court order, or government regulation</li>
+      <li>To protect the rights, property, or safety of The Family Pest Control or our customers</li>
+      <li>With your explicit written consent</li>
     </ul>
-  </div>
-
-  <div class="section">
-    <h2>Data Security</h2>
-    <p>We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
-  </div>
-
-  <div class="section">
-    <h2>Data Retention</h2>
-    <p>We retain your personal information for as long as necessary to provide our services and comply with legal obligations. You may request deletion of your information at any time by contacting us.</p>
   </div>
 
   <div class="section">
     <h2>Your Rights</h2>
-    <p>You have the right to:</p>
+    <p>You have the following rights regarding your personal information:</p>
     <ul>
-      <li>Request access to the personal information we hold about you</li>
-      <li>Request correction of inaccurate information</li>
-      <li>Request deletion of your information</li>
-      <li>Opt out of SMS communications at any time by replying STOP</li>
+      <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
+      <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+      <li><strong>Deletion:</strong> Request deletion of your personal information from our records</li>
+      <li><strong>Opt out of SMS:</strong> Reply STOP to any message or contact us directly to stop receiving text messages</li>
+      <li><strong>Opt out of all communications:</strong> Contact us to be removed from all contact lists</li>
     </ul>
-    <p>To exercise any of these rights, contact us using the information below.</p>
+    <p>To exercise any of these rights, contact us using the information below. We will respond to all requests within 30 days.</p>
+  </div>
+
+  <div class="section">
+    <h2>Data Retention</h2>
+    <p>We retain your personal information for as long as necessary to provide our services and comply with legal obligations — typically no longer than 3 years after your last service interaction. You may request deletion of your information at any time by contacting us.</p>
+  </div>
+
+  <div class="section">
+    <h2>Third-Party Links</h2>
+    <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices of those sites and encourage you to review their privacy policies before providing any personal information.</p>
   </div>
 
   <div class="section">
@@ -192,34 +173,17 @@ footer a:hover{color:var(--green-light);}
   </div>
 
   <div class="contact-box">
-    <h2>Contact Us</h2>
-    <div class="contact-item">
-      <span>🏡</span>
-      <p>The Family Pest Control</p>
-    </div>
-    <div class="contact-item">
-      <span>📍</span>
-      <p>2004 NE 67th Street, Gladstone, MO 64118</p>
-    </div>
-    <div class="contact-item">
-      <span>📞</span>
-      <a href="tel:+1816-429-0380">(816) 774-2538</a>
-    </div>
-    <div class="contact-item">
-      <span>✉️</span>
-      <a href="mailto:myfamilypestcontrol@gmail.com">myfamilypestcontrol@gmail.com</a>
-    </div>
-    <div class="contact-item">
-      <span>🌐</span>
-      <a href="https://thefamilypestcontrol.com">thefamilypestcontrol.com</a>
-    </div>
+    <h2>Contact Us About Privacy</h2>
+    <div class="contact-item"><span>🏡</span><p style="color:rgba(250,247,242,0.7)">The Family Pest Control</p></div>
+    <div class="contact-item"><span>📍</span><p>2004 NE 67th Street, Gladstone, MO 64118</p></div>
+    <div class="contact-item"><span>📞</span><a href="tel:+18164290380">(816) 429-0380</a></div>
+    <div class="contact-item"><span>✉️</span><a href="mailto:myfamilypestcontrol@gmail.com">myfamilypestcontrol@gmail.com</a></div>
+    <div class="contact-item"><span>🌐</span><a href="https://thefamilypestcontrol.com">thefamilypestcontrol.com</a></div>
   </div>
 
 </div>
-
 <footer>
-  <p>© 2026 The Family Pest Control · Gladstone, MO · <a href="/privacy.html">Privacy Policy</a></p>
+  <p>© 2026 The Family Pest Control · Gladstone, MO · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a></p>
 </footer>
-
 </body>
 </html>
